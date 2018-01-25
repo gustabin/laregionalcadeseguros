@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+  <div class="main">
+  <!--==============================header=================================-->    <header>
+        <h1><span class="logo"><img src="images/logotipo.jpg" width="402" height="141" /></span></h1>
+        <div class="form-search">
+            <form id="form-search" method="post">
+              <input type="text" value="Escriba aquí..." onBlur="if(this.value=='') this.value='Escriba aquí...'" onFocus="if(this.value =='Escriba aquí...' ) this.value=''"  />
+              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button"></a>
+            </form>
+        </div>   
+        <div class="clear"></div>    
+       <nav class="box-shadow">
+            <div>
+                <ul class="menu">
+                    <li class="home-page"><a href="index.html"><span></span></a></li>
+					<li><a href="about.html">La empresa</a></li>
+                    <li><a href="fianzas.html">Fianzas</a></li>
+                    <li><a href="legitimacion_de_capitales.html">Legitimación de Capitales</a></li>
+                    <li class="current"><a href="contactos.html">Contactos</a></li>
+                </ul>
+                <div class="social-icons">
+                    <span>Siguenos:</span>
+                    <a href="#" class="icon-3"></a>
+                    <a href="#" class="icon-2"></a>
+                    <a href="#" class="icon-1"></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </nav>
+    </header>   
+  <!--==============================content================================-->
+    <section id="content"><div class="ic"></div>
+        <div class="container_12">	
+          <div class="grid_12">
+            <div class="wrap pad-2">
+                
+                <div class="block-4">
+                    <h3>Cotización de poliza <br>
+                    </h3>
+                    <p>Por favor complete la siguiente información: </p>
+
+                    <form name="form1" id="form1" method="post" action="cotizacion_procesar.php">
+                      <p>&nbsp;</p>
+                      <table width="570" border="0" cellspacing="10">
+                        <tr>
+                          <td><strong>Datos del solicitante </strong></td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>Nombre y Apellido o Raz&oacute;n Social </td>
+                          <td><input name="txt_Nombre" type="text" id="txt_Nombre" size="30" maxlength="30" /></td>
+                        </tr>
+                        <tr>
+                          <td>C&eacute;dula</td>
+                          <td><input name="txt_Cedula" type="text" id="txt_Cedula" size="12" maxlength="10" /></td>
+                        </tr>
+                        <tr>
+                          <td>Direcci&oacute;n</td>
+                          <td><textarea name="txt_Direccion" id="txt_Direccion"></textarea></td>
+                        </tr>
+                        <tr>
+                          <td>Tel&eacute;fono</td>
+                          <td><input name="txt_Telefono" type="text" id="txt_Telefono" size="15" maxlength="15" /></td>
+                        </tr>
+                        <tr>
+                          <td>Email</td>
+                          <td><input name="txt_Email" type="text" id="txt_Email" size="30" maxlength="30" /></td>
+                        </tr>
+                        <tr>
+                          <td>Edad</td>
+                          <td><input name="txt_Edad" type="text" id="txt_Edad" size="2" maxlength="2" /></td>
+                        </tr>
+                        <tr>
+                          <td>Estado Civil </td>
+                          <td><input name="txt_EdoCivil" type="text" id="txt_EdoCivil" /></td>
+                        </tr>
+                        <tr>
+                          <td>Sexo</td>
+                          <td>F
+                              <input name="rad_Sexo" type="radio" value="Femenino" checked="checked" />
+        M
+        <input name="rad_Sexo" type="radio" value="Masculino" /></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Datos del veh&iacute;culo </strong></td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>Marca</td>
+                          <td><input name="txt_Marca" type="text" id="txt_Marca" size="20" maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                          <td>Modelo</td>
+                          <td><input name="txt_Modelo" type="text" id="txt_Modelo" size="20" maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                          <td>A&ntilde;o</td>
+                          <td><input name="txt_Año" type="text" id="txt_Año" size="5" maxlength="4" /></td>
+                        </tr>
+                        <tr>
+                          <td>Uso</td>
+                          <td><input name="txt_Uso" type="text" id="txt_Uso" size="20" maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>&iquest;Como desea ser contactado? </td>
+                          <td>Tel&eacute;fono
+                              <input name="rad_Contactado" type="radio" value="Telefono" />
+        Email
+        <input name="rad_Contactado" type="radio" value="Email" checked="checked" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td><div align="right">
+                              <input type="submit" name="Submit" value="Enviar" />
+                          </div></td>
+                        </tr>
+                      </table>
+                    </form>
+                    <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+    </section> 
+  </div>    
+<!--==============================footer=================================-->
+    <footer>
+		<p>La regional c.a. de seguros <br />
+    RIF No. J-07531470-0 <br />
+    Aprobado por la Superintendencia de la Actividad <br />
+    Aseguradora bajo el N° 89 <br />
+    Derechos Reservados © 2013 La Regional C.A. de Seguros - Desarrollado por <a rel="nofollow" href="http://www.elsiglo.com.ve" target="_blank" class="link">Gustavo Arias</a>
+</footer>    
+</body>
+</html>
